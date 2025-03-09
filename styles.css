@@ -1,67 +1,101 @@
+/* Background with gradient colors */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    background: linear-gradient(to right, #ff758c, #ff7eb3, #ffde59, #85ffbd);
     color: white;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Main container styling */
 .container {
-    max-width: 600px;
+    max-width: 750px;
     margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
+/* Title */
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
 }
 
+/* Poem styling */
 .poem {
     font-size: 1.2em;
     margin: 20px 0;
+    color: #ffffff;
+    font-style: italic;
 }
 
+/* Image gallery grid */
 .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
 }
 
+/* Image styling */
 .gallery img {
-    width: 45%;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Music player styling */
 .music {
     margin-top: 20px;
 }
 
+/* Button styling */
 .buttons {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 button {
-    background: white;
-    color: #ff758c;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
     margin: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background: #ff4e6a;
-    color: white;
+    background: linear-gradient(to right, #ffde59, #85ffbd);
+    color: black;
+    transform: scale(1.1);
 }
 
+/* Response message */
 #responseMessage {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
 }
