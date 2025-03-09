@@ -39,23 +39,19 @@ h1 {
 
 /* Image gallery grid */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
-    margin-top: 20px;
 }
 
-/* Image styling */
 .gallery img {
     width: 100%;
+    max-width: 250px;  /* Adjusts maximum image width */
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Music player styling */
