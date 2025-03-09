@@ -1,7 +1,7 @@
-/* Background with gradient colors */
+/* Background with a vibrant gradient */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff758c, #ff7eb3, #ffde59, #85ffbd);
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffde59, #85ffbd);
     color: white;
     text-align: center;
     margin: 0;
@@ -47,7 +47,7 @@ h1 {
 
 .gallery img {
     width: 100%;
-    max-width: 250px;  /* Adjusts maximum image width */
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
